@@ -127,6 +127,16 @@ namespace LyncTracker
                 statusList.Add(ContactAvailability.DoNotDisturb);
             return statusList;
         }
+        if (checkedList.Any(it=>it.Text=="Inactive"))
+            {
+                statusList.Add(ContactAvailability.Inactive);
+                statusList.Add(ContactAvailability.Inactive);
+            }
+        
+        
+        
+        
+        
 
         List<string> ToStringList(System.Windows.Forms.ListView.ListViewItemCollection oc)
         {
